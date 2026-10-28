@@ -55,5 +55,6 @@ RUN ln -fsv /mnt/volumes/configuration/_gitconfig .gitconfig
 # ╭――――――――――――――――――――╮
 # │ CONFIG             │
 # ╰――――――――――――――――――――╯
+ENV HERMES_WRITE_SAFE_ROOT=/home/${USER}/.hermes
 WORKDIR /home/${USER}
 RUN chown -R ${USER}:${USER} /home/${USER}
